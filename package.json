@@ -1,6 +1,6 @@
 {
   "name": "react-native-acomponentes",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "Paquete de componentes creado para uso general en react native",
   "main": "index.js",
   "scripts": {
