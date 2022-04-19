@@ -1,4 +1,4 @@
-package com.acomponentes;
+package com.rnacomponentes;
 
 import androidx.annotation.NonNull;
 

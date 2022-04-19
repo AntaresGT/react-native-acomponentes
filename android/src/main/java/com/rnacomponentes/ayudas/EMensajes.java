@@ -1,4 +1,4 @@
-package com.acomponentes.ayudas;
+package com.rnacomponentes.ayudas;
 
 /**
  * @author Allam López

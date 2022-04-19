@@ -1,4 +1,4 @@
-package com.acomponentes;
+package com.rnacomponentes;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -27,8 +27,8 @@ import android.util.Log;
 import android.util.Size;
 import android.widget.Button;
 
-import com.acomponentes.ayudas.EMensajes;
-import com.acomponentes.ayudas.EResultados;
+import com.rnacomponentes.ayudas.EMensajes;
+import com.rnacomponentes.ayudas.EResultados;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

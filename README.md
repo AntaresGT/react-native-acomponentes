@@ -17,4 +17,4 @@ Agregar a ```AndroidManifest.xml``` dentro de la etiqueta ```<application></appl
 ```
 
 ## Paquete Java
-Agregar ```com.acomponentes.ACamaraNativo``` a ```android/src/java/[...]/MainApplication.java```
+Agregar ```com.rnacomponentes.ACamaraNativo``` a ```android/src/java/[...]/MainApplication.java```

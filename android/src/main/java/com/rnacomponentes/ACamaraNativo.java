@@ -1,4 +1,4 @@
-package com.acomponentes;
+package com.rnacomponentes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,8 +6,8 @@ import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
-import com.acomponentes.ayudas.EMensajes;
-import com.acomponentes.ayudas.EResultados;
+import com.rnacomponentes.ayudas.EMensajes;
+import com.rnacomponentes.ayudas.EResultados;
 import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.BaseActivityEventListener;
 import com.facebook.react.bridge.Promise;
