@@ -1,0 +1,15 @@
+{
+  "name": "react-native-acomponentes",
+  "version": "1.0.0",
+  "description": "Componentes personalizados para react-native",
+  "main": "index.js",
+  "repository": "https://github.com/AntaresGT/react-native-acomponentes.git",
+  "author": "Allam López (Antares) <alan@antaresgt.com>",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "android",
+    "react-native-acomponentes",
+    "react-native-acomponentes"
+  ]
+}
