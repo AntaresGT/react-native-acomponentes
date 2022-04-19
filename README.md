@@ -8,10 +8,13 @@ Proyecto en pruebas y en desarrollo actualmente
 Hay que instalar manualmente en el proyecto react-native-vector-icons
 
 ## MLKIT
-Agregar a ```AndroidManifest.xml``` dentro de la etiqueta <application></application>
+Agregar a ```AndroidManifest.xml``` dentro de la etiqueta ```<application></application>```
 ``` XML
 <meta-data
   android:name="com.google.mlkit.vision.DEPENDENCIES"
   android:value="barcode"
 />
 ```
+
+## Paquete Java
+Agregar ```com.acomponentes.ACamaraNativo``` a ```android/src/java/[...]/MainApplication.java```

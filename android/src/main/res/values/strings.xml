@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AComponentes</string>
+    <string name="ingresar_manulamente">Ingresar\nmanualmente</string>
+    <string name="cancelar">Cancelar</string>
+</resources>

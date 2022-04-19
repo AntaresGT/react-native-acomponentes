@@ -1,0 +1,28 @@
+package com.acomponentes;
+
+import androidx.annotation.NonNull;
+
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.uimanager.ViewManager;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class AModulosNativos implements ReactPackage {
+    @NonNull
+    @Override
+    public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
+        List<NativeModule> modulos = new ArrayList<>();
+        modulos.add(new ACamaraNativo(reactContext));
+        return  modulos;
+    }
+
+    @NonNull
+    @Override
+    public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
+        return  Collections.emptyList();
+    }
+}
