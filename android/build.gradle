@@ -1,0 +1,60 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+android {
+    compileSdkVersion = 31
+
+
+    defaultConfig {
+        minSdkVersion = 21
+        targetSdkVersion = 31
+        versionCode 1
+        versionName "1.0"
+
+        if (System.properties['os.arch'] == "aarch64") {
+            // For M1 Users we need to use the NDK 24 which added support for aarch64
+            ndkVersion = "24.0.8215888"
+        } else if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+            // For Android Users, we need to use NDK 23, otherwise the build will
+            // fail due to paths longer than the OS limit
+            ndkVersion = "23.1.7779620"
+        } else {
+            // Otherwise we default to the side-by-side NDK version from AGP.
+            ndkVersion = "21.4.7075529"
+        }
+    }
+    
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("de.undercouch:gradle-download-task:4.1.2")
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        // Dependencias para la camara
+        // CameraX core library using the camera2 implementation
+        def camerax_version = "1.1.0-beta02"
+        // The following line is optional, as the core library is included indirectly by camera-camera2
+        implementation "androidx.camera:camera-core:${camerax_version}"
+        implementation "androidx.camera:camera-camera2:${camerax_version}"
+        // If you want to additionally use the CameraX Lifecycle library
+        implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+        // If you want to additionally use the CameraX VideoCapture library
+        implementation "androidx.camera:camera-video:${camerax_version}"
+        // If you want to additionally use the CameraX View class
+        implementation "androidx.camera:camera-view:${camerax_version}"
+        // If you want to additionally use the CameraX Extensions library
+        implementation "androidx.camera:camera-extensions:${camerax_version}"
+        // Dependencias para el lector de codigos de barras
+        // Use this dependency to bundle the model with your app
+        implementation 'com.google.mlkit:barcode-scanning:17.0.2'
+        // Use this dependency to use the dynamically downloaded model in Google Play Services
+        implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0'
+    }

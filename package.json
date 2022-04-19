@@ -1,15 +1,22 @@
 {
   "name": "react-native-acomponentes",
   "version": "1.0.0",
-  "description": "Componentes personalizados para react-native",
+  "description": "Paquete de componentes creado para uso general en react native",
   "main": "index.js",
-  "repository": "https://github.com/AntaresGT/react-native-acomponentes.git",
-  "author": "Allam López (Antares) <alan@antaresgt.com>",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntaresGT/react-native-acomponentes.git"
+  },
   "keywords": [
-    "react-native",
-    "android",
-    "react-native-acomponentes",
     "react-native-acomponentes"
-  ]
+  ],
+  "author": "Allam López <alan@antaresgt.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntaresGT/react-native-acomponentes/issues"
+  },
+  "homepage": "https://github.com/AntaresGT/react-native-acomponentes#readme"
 }
